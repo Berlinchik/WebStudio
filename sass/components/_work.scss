@@ -1,0 +1,33 @@
+.work__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.work__container {
+    padding-bottom: 94px;
+}
+
+.work__img-container {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.work__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+
+    height: 70px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+    color: var(--white-color);
+    background: rgba(0, 0, 0, 0.432);
+}
