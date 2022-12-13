@@ -1,15 +1,27 @@
-.page-header {
-  border-bottom: 1px solid #ececec;
-}
-
 .header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+
+  &__burger {
+    background-color: transparent;
+    border-color: transparent;
+
+    &:hover,
+    &:focus {
+      fill: var(--accent-color);
+    }
+
+    @include tablet {
+      display: none;
+    }
+  }
 }
 
 .navigation {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #ececec;
 
   &__logo-first {
     color: var(--accent-color);
@@ -24,12 +36,25 @@
     color: #000000;
     font-family: Raleway;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
+    font-size: 24px;
+    line-height: 1.16;
+
+    @include desktop {
+      font-size: 26px;
+      line-height: 1.2;
+    }
   }
 
   &__item:not(:last-child) {
     margin-right: 50px;
+  }
+
+  &__list {
+    display: none;
+
+    @include tablet {
+      display: flex;
+    }
   }
 }
 
@@ -74,10 +99,18 @@
 // ___Contacts___
 
 .contacts {
+  display: none;
   margin-left: auto;
 
-  &__item + &__item {
-    margin-left: 30px;
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  @include desktop {
+    display: flex;
+    gap: 30px;
   }
 }
 
@@ -97,12 +130,11 @@
 .contacts__link {
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
 
   color: var(--primary-text-color);
   font-weight: 500;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
 
   transition-property: color;
@@ -112,5 +144,12 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
+  }
+
+  @include desktop {
+    font-size: 14px;
+    line-height: 1.14;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }

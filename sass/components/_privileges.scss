@@ -6,18 +6,36 @@
   text-transform: uppercase;
 }
 
-.privileges__item {
-  margin-right: 30px;
-  max-width: 270px;
+.privileges__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
 
-  &:last-child {
-    margin-right: 0;
+.privileges__item {
+  text-align: center;
+  width: 100%;
+
+  @include tablet {
+    @include calc(2, 30px);
+    text-align: left;
+  }
+
+  @include desktop {
+    max-width: 270px;
+    text-align-last: left;
   }
 }
 
 .privileges__container {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include desktop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .privileges__card {
@@ -27,8 +45,9 @@
   margin-bottom: 30px;
   background-color: #f5f4fa;
   border-radius: 4px;
-  width: 270px;
+  // width: 270px;
   height: 120px;
+  width: 100%;
 }
 
 .privileges__title--main {
