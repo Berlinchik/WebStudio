@@ -29,8 +29,8 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   padding: 40px;
 
   background-color: var(--white-color);
@@ -56,6 +56,11 @@
       fill: var(--accent-color);
     }
   }
+
+  @include desktop {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 // __Form__
@@ -67,11 +72,15 @@
     margin-bottom: 12px;
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.03em;
 
     color: var(--secondary-text-color);
+
+    @include desktop {
+      line-height: 1.15;
+    }
   }
 
   &__label {
@@ -172,6 +181,14 @@
     display: flex;
     align-items: center;
     position: relative;
+
+    font-size: 12px;
+    line-height: 1.16;
+
+    @include desktop {
+      font-size: 14px;
+      line-height: 1.71;
+    }
   }
 }
 
