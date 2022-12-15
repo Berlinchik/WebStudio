@@ -2,36 +2,29 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid #ececec;
 
-  &__burger {
-    background-color: transparent;
-    border-color: transparent;
-
-    &:hover,
-    &:focus {
-      fill: var(--accent-color);
-    }
-
-    @include tablet {
-      display: none;
-    }
+  @include tablet {
+    height: auto;
   }
 }
 
 .navigation {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ececec;
+  // border-bottom: 1px solid #ececec;
 
   &__logo-first {
     color: var(--accent-color);
   }
 
   &__logo-head {
-    display: flex;
-    margin-right: 93px;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    // display: flex;
+
+    padding-top: 16px;
+    padding-bottom: 16px;
 
     color: #000000;
     font-family: Raleway;
@@ -39,7 +32,16 @@
     font-size: 24px;
     line-height: 1.16;
 
+    @include tablet {
+      margin-right: 88px;
+      padding-top: 26px;
+      padding-bottom: 26px;
+    }
+
     @include desktop {
+      margin-right: 92px;
+      padding-top: 25px;
+      padding-bottom: 25px;
       font-size: 26px;
       line-height: 1.2;
     }
@@ -151,5 +153,12 @@
     line-height: 1.14;
     padding-top: 32px;
     padding-bottom: 32px;
+  }
+}
+
+.nav__burger {
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
   }
 }

@@ -16,10 +16,6 @@ body {
   margin-bottom: 0;
 }
 
-a {
-  text-decoration: none;
-}
-
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -52,7 +48,7 @@ a {
   margin-right: auto;
   padding: 0 15px;
   width: 100%;
-  outline: 2px solid tomato;
+  // outline: 2px solid tomato;
 
   @media screen and (min-width: 480px) {
     width: 480px;

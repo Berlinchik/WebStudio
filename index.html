@@ -47,7 +47,7 @@
             </svg><span>+38 096 111 11 11</span></a>
         </li>
       </ul>
-      <button class="header__burger js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+      <button class="menu-toggle js-open-menu nav__burger" aria-expanded="false" aria-controls="mobile-menu">
         <svg class="header__icon" width="40px" height="40px">
           <use href="./images/icons.svg#icon-menu-btn"></use>
         </svg>
@@ -498,6 +498,36 @@
         </div>
         <button class="form-button" type="submit">Відправити</button>
       </form>
+    </div>
+  </div>
+  <!-- Mobile-menu -->
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu">
+      <svg class="menu-toggle__icon" width="40" height="40" fill="currentColor">
+        <use href="./images/icons.svg#icon-close-menu"></use>
+      </svg>
+    </button>
+
+    <div class="container ">
+      <div class="mob-menu-top">
+        <ul class="mobile-menu list">
+          <li><a href="./index.html" class="mobile-menu__link">Студія</a></li>
+          <li><a href="./portfolio.html" class="mobile-menu__link">Портфоліо</a></li>
+          <li><a href="#" class="mobile-menu__link">Контакти</a></li>
+        </ul>
+      </div>
+      <div class="mob-menu-bottom">
+        <ul class="menu-contacts list">
+          <li><a href="telto:+380961111111" class="menu-contacts__number">+38 096 111 11 11</a></li>
+          <li><a href="mailto:info@devstudio.com" class="menu-contacts__mail">info@devstudio.com</a></li>
+        </ul>
+        <ul class="menu-soc list">
+          <li class="menu-soc__item"><a href="#" class="menu-soc__link">Instagram</a></li>
+          <li class="menu-soc__item"><a href="#" class="menu-soc__link">Twitter</a></li>
+          <li class="menu-soc__item"><a href="#" class="menu-soc__link">Facebook</a></li>
+          <li class="menu-soc__item"><a href="#" class="menu-soc__link">LinkedIn</a></li>
+        </ul>
+      </div>
     </div>
   </div>
   <!-- JS -->

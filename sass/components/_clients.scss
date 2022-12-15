@@ -16,6 +16,7 @@
 }
 
 .clients__item {
+  height: 92px;
   @include calc(2, 30px);
 
   @include tablet {
@@ -24,7 +25,6 @@
 
   @include desktop {
     width: 170px;
-    height: 92px;
   }
 }
 
