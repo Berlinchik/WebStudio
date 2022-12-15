@@ -102,7 +102,7 @@
   display: none;
   margin-left: auto;
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     flex-direction: column;
     gap: 10px;
