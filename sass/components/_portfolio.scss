@@ -5,8 +5,13 @@
   padding-bottom: 94px;
 
   &__list {
-    justify-content: center;
+    justify-content: start;
+    flex-wrap: wrap;
     margin-bottom: 50px;
+
+    @include tablet {
+      justify-content: center;
+    }
   }
 
   &__item:not(:last-child) {
