@@ -29,7 +29,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
-  width: 450px;
+  width: calc(100% - 30px);
   height: 609px;
   padding: 40px;
 
@@ -54,6 +54,9 @@
     &:hover .modal__btn-icon,
     &:focus .modal__btn-icon {
       fill: var(--accent-color);
+    }
+    &-icon {
+      fill: var(--secondary-text-color);
     }
   }
 
