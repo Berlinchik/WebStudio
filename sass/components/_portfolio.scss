@@ -8,14 +8,12 @@
     justify-content: start;
     flex-wrap: wrap;
     margin-bottom: 50px;
+    gap: 15px 8px;
 
     @include tablet {
       justify-content: center;
+      gap: 8px;
     }
-  }
-
-  &__item:not(:last-child) {
-    margin-right: 8px;
   }
 }
 
