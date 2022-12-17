@@ -785,14 +785,13 @@ footer {
   justify-content: start;
   flex-wrap: wrap;
   margin-bottom: 50px;
+  gap: 15px 8px;
 }
 @media screen and (min-width: 768px) {
   .our-works__list {
     justify-content: center;
+    gap: 8px;
   }
-}
-.our-works__item:not(:last-child) {
-  margin-right: 8px;
 }
 
 .our-works__button {
