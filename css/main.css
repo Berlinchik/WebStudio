@@ -822,7 +822,17 @@ footer {
   gap: 30px;
 }
 .project__item {
-  width: 370px;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .project__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .project__item {
+    width: calc((100% - 60px) / 3);
+  }
 }
 .project__border {
   padding: 20px 24px;
