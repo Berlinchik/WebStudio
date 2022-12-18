@@ -53,7 +53,16 @@
   gap: 30px;
 
   &__item {
-    width: 370px;
+    width: 100%;
+    // width: 370px;
+
+    @include tablet {
+      @include calc(2, 30px);
+    }
+
+    @include desktop {
+      @include calc(3, 30px);
+    }
   }
 
   &__border {
