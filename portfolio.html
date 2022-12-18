@@ -12,7 +12,7 @@
     rel="stylesheet" />
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
-  <link rel="stylesheet" href="./css/main.min.css">
+  <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 
 <body>
@@ -77,12 +77,28 @@
         </ul>
         <ul class="project list">
           <li class="project__item">
-            <a href="./portfolio.html" class="project__link">
+            <a href="#" class="project__link">
               <div class="project__container">
-                <img src="./images/macbook/macbook-desktop-min.jpeg" alt="ноутбук" width="370" />
-                <p class="project__content">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
-                  сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.</p>
+                <picture>
+                  <source srcset="
+                        ./images/macbook/macbook-desktop-min.jpeg    1x,
+                        ./images/macbook/macbook-desktop-2x-min.jpeg 2x
+                      " media="(min-width: 1200px)" />
+                  <source srcset="
+                        ./images/macbook/macbook-tab-min.jpeg    1x,
+                        ./images/macbook/macbook-tab-2x-min.jpeg 2x
+                      " media="(min-width: 768px)" />
+                  <source srcset="
+                        ./images/macbook/macbook-mob-min.jpeg    1x,
+                        ./images/macbook/macbook-mob-2x-min.jpeg 2x
+                      " media="(max-width: 767px)" />
+                  <img src="./images/macbook/macbook-mob-min.jpeg" alt="фото веб-сайту" width="450" height="294" />
+                </picture>
+                <p class="project__content">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу
+                  отримати вичерпні відомості про компанію чи приватну особу.
+                </p>
               </div>
               <div class="project__border">
                 <h2 class="project__title">Технокряк</h2>
@@ -91,12 +107,29 @@
             </a>
           </li>
           <li class="project__item">
-            <a href="./portfolio.html" class="project__link">
-              <div class="project__container"><img src="./images/basketball/basketball-desktop.jpeg" alt="баскетболісти"
-                  width="370" />
-                <p class="project__content">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
-                  сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.</p>
+            <a href="#" class="project__link">
+              <div class="project__container">
+                <picture>
+                  <source srcset="
+                        ./images/basketball/basketball-desktop.jpeg    1x,
+                        ./images/basketball/basketball-desktop-2x.jpeg 2x
+                      " media="(min-width: 1200px)" />
+                  <source srcset="
+                        ./images/basketball/basketball-tab.jpeg    1x,
+                        ./images/basketball/basketball-tab-2x.jpeg 2x
+                      " media="(min-width: 768px)" />
+                  <source srcset="
+                        ./images/basketball/basketball-mob.jpeg    1x,
+                        ./images/basketball/basketball-mob-2x.jpeg 2x
+                      " media="(max-width: 767px)" />
+                  <img src="./images/basketball/basketball-mob.jpeg" alt="постер з баскетболістами" width="450"
+                    height="294" />
+                </picture>
+                <p class="project__content">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу
+                  отримати вичерпні відомості про компанію чи приватну особу.
+                </p>
               </div>
               <div class="project__border">
                 <h2 class="project__title">
@@ -107,12 +140,28 @@
             </a>
           </li>
           <li class="project__item">
-            <a href="./portfolio.html" class="project__link">
-              <div class="project__container"><img src="./images/fish/fish-desktop-min.jpeg" alt="логотип ресторану"
-                  width="370" />
-                <p class="project__content">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
-                  сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.</p>
+            <a href="#" class="project__link">
+              <div class="project__container">
+                <picture>
+                  <source srcset="
+                        ./images/fish/fish-desktop-min.jpeg    1x,
+                        ./images/fish/fish-desktop-2x-min.jpeg 2x
+                      " media="(min-width: 1200px)" />
+                  <source srcset="
+                        ./images/fish/fish-tab-min.jpeg    1x,
+                        ./images/fish/fish-tab-2x-min.jpeg 2x
+                      " media="(min-width: 768px)" />
+                  <source srcset="
+                        ./images/fish/fish-mob-min.jpeg    1x,
+                        ./images/fish/fish-mob-2x-min.jpeg 2x
+                      " media="(max-width: 767px)" />
+                  <img src="./images/fish/fish-mob-min.jpeg" alt="логотип ресторану" width="450" height="294" />
+                </picture>
+                <p class="project__content">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу
+                  отримати вичерпні відомості про компанію чи приватну особу.
+                </p>
               </div>
               <div class="project__border">
                 <h2 class="project__title">
@@ -123,12 +172,28 @@
             </a>
           </li>
           <li class="project__item">
-            <a href="./portfolio.html" class="project__link">
-              <div class="project__container"><img src="./images/headphones/headphones-desktop-min.jpeg"
-                  alt="навушнкики" width="370" />
-                <p class="project__content">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
-                  сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.</p>
+            <a href="#" class="project__link">
+              <div class="project__container">
+                <picture>
+                  <source srcset="
+                        ./images/headphones/headphones-desktop-min.jpeg    1x,
+                        ./images/headphones/headphones-desktop-2x-min.jpeg 2x
+                      " media="(min-width: 1200px)" />
+                  <source srcset="
+                        ./images/headphones/headphones-tab-min.jpeg    1x,
+                        ./images/headphones/headphones-tab-2x-min.jpeg 2x
+                      " media="(min-width: 768px)" />
+                  <source srcset="
+                        ./images/headphones/headphones-mob-min.jpeg    1x,
+                        ./images/headphones/headphones-mob-2x-min.jpeg 2x
+                      " media="(max-width: 767px)" />
+                  <img src="./images/headphones/headphones-mob-min.jpeg" alt="навушнкики" width="450" height="294" />
+                </picture>
+                <p class="project__content">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу
+                  отримати вичерпні відомості про компанію чи приватну особу.
+                </p>
               </div>
               <div class="project__border">
                 <h2 class="project__title">
@@ -139,12 +204,28 @@
             </a>
           </li>
           <li class="project__item">
-            <a href="./portfolio.html" class="project__link">
-              <div class="project__container"><img src="./images/boxes/boxes-desktop-min.jpeg" alt="коробки"
-                  width="370" />
-                <p class="project__content">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
-                  сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.</p>
+            <a href="#" class="project__link">
+              <div class="project__container">
+                <picture>
+                  <source srcset="
+                        ./images/boxes/boxes-desktop-min.jpeg    1x,
+                        ./images/boxes/boxes-desktop-2x-min.jpeg 2x
+                      " media="(min-width: 1200px)" />
+                  <source srcset="
+                        ./images/boxes/boxes-tab-min.jpeg    1x,
+                        ./images/boxes/boxes-tab-2x-min.jpeg 2x
+                      " media="(min-width: 768px)" />
+                  <source srcset="
+                        ./images/boxes/boxes-mob-min.jpeg    1x,
+                        ./images/boxes/boxes-mob-2x-min.jpeg 2x
+                      " media="(max-width: 767px)" />
+                  <img src="./images/boxes/boxes-mob-min.jpeg" alt="навушнкики" width="450" height="294" />
+                </picture>
+                <p class="project__content">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу
+                  отримати вичерпні відомості про компанію чи приватну особу.
+                </p>
               </div>
               <div class="project__border">
                 <h2 class="project__title">
@@ -155,12 +236,28 @@
             </a>
           </li>
           <li class="project__item">
-            <a href="./portfolio.html" class="project__link">
-              <div class="project__container"><img src="./images/imac/imac-desktop-min.jpeg" alt="компʼютер"
-                  width="370" />
-                <p class="project__content">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
-                  сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.</p>
+            <a href="#" class="project__link">
+              <div class="project__container">
+                <picture>
+                  <source srcset="
+                        ./images/imac/imac-desktop-min.jpeg    1x,
+                        ./images/imac/imac-desktop-2x-min.jpeg 2x
+                      " media="(min-width: 1200px)" />
+                  <source srcset="
+                        ./images/imac/imac-tab-min.jpeg    1x,
+                        ./images/imac/imac-tab-2x-min.jpeg 2x
+                      " media="(min-width: 768px)" />
+                  <source srcset="
+                        ./images/imac/imac-mob-min.jpeg    1x,
+                        ./images/imac/imac-mob-2x-min.jpeg 2x
+                      " media="(max-width: 767px)" />
+                  <img src="./images/imac/imac-mob-min.jpeg" alt="навушнкики" width="450" height="294" />
+                </picture>
+                <p class="project__content">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу
+                  отримати вичерпні відомості про компанію чи приватну особу.
+                </p>
               </div>
               <div class="project__border">
                 <h2 class="project__title" lang="en">
@@ -171,11 +268,28 @@
             </a>
           </li>
           <li class="project__item">
-            <a href="./portfolio.html" class="project__link">
-              <div class="project__container"><img src="./images/book/book-desktop-min.jpeg" alt="книжка" width="370" />
-                <p class="project__content">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
-                  сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.</p>
+            <a href="#" class="project__link">
+              <div class="project__container">
+                <picture>
+                  <source srcset="
+                        ./images/book/book-desktop-min.jpeg    1x,
+                        ./images/book/book-desktop-2x-min.jpeg 2x
+                      " media="(min-width: 1200px)" />
+                  <source srcset="
+                        ./images/book/book-tab-min.jpeg    1x,
+                        ./images/book/book-tab-2x-min.jpeg 2x
+                      " media="(min-width: 768px)" />
+                  <source srcset="
+                        ./images/book/book-mob-min.jpeg    1x,
+                        ./images/book/book-mob-2x-min.jpeg 2x
+                      " media="(max-width: 767px)" />
+                  <img src="./images/book/book-mob-min.jpeg" alt="навушнкики" width="450" height="294" />
+                </picture>
+                <p class="project__content">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу
+                  отримати вичерпні відомості про компанію чи приватну особу.
+                </p>
               </div>
               <div class="project__border">
                 <h2 class="project__title">
@@ -186,12 +300,28 @@
             </a>
           </li>
           <li class="project__item">
-            <a href="./portfolio.html" class="project__link">
-              <div class="project__container"><img src="./images/label/label-desktop-min.jpeg" alt="бірка"
-                  width="370" />
-                <p class="project__content">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
-                  сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.</p>
+            <a href="#" class="project__link">
+              <div class="project__container">
+                <picture>
+                  <source srcset="
+                        ./images/label/label-desktop-min.jpeg    1x,
+                        ./images/label/label-desktop-2x-min.jpeg 2x
+                      " media="(min-width: 1200px)" />
+                  <source srcset="
+                        ./images/label/label-tab-min.jpeg    1x,
+                        ./images/label/label-tab-2x-min.jpeg 2x
+                      " media="(min-width: 768px)" />
+                  <source srcset="
+                        ./images/label/label-mob-min.jpeg    1x,
+                        ./images/label/label-mob-2x-min.jpeg 2x
+                      " media="(max-width: 767px)" />
+                  <img src="./images/label/label-mob-min.jpeg" alt="навушнкики" width="450" height="294" />
+                </picture>
+                <p class="project__content">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу
+                  отримати вичерпні відомості про компанію чи приватну особу.
+                </p>
               </div>
               <div class="project__border">
                 <h2 class="project__title">
@@ -202,12 +332,28 @@
             </a>
           </li>
           <li class="project__item">
-            <a href="./portfolio.html" class="project__link">
-              <div class="project__container"><img src="./images/macbook-2/macbook-2-desktop-min.jpeg"
-                  alt="робота за ноутбуком" width="370" />
-                <p class="project__content">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
-                  сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.</p>
+            <a href="#" class="project__link">
+              <div class="project__container">
+                <picture>
+                  <source srcset="
+                        ./images/macbook-2/macbook-2-desktop-min.jpeg    1x,
+                        ./images/macbook-2/macbook-2-desktop-2x-min.jpeg 2x
+                      " media="(min-width: 1200px)" />
+                  <source srcset="
+                        ./images/macbook-2/macbook-2-tab-min.jpeg    1x,
+                        ./images/macbook-2/macbook-2-tab-2x-min.jpeg 2x
+                      " media="(min-width: 768px)" />
+                  <source srcset="
+                        ./images/macbook-2/macbook-2-mob-min.jpeg    1x,
+                        ./images/macbook-2/macbook-2-mob-2x-min.jpeg 2x
+                      " media="(max-width: 767px)" />
+                  <img src="./images/macbook-2/macbook-2-mob-min.jpeg" alt="навушнкики" width="450" height="294" />
+                </picture>
+                <p class="project__content">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу
+                  отримати вичерпні відомості про компанію чи приватну особу.
+                </p>
               </div>
               <div class="project__border">
                 <h2 class="project__title" lang="en">Growing Business</h2>
@@ -288,24 +434,38 @@
       </svg>
     </button>
 
-    <div class="container ">
+    <div class="container">
       <div class="mob-menu-top">
         <ul class="mobile-menu list">
           <li><a href="./index.html" class="mobile-menu__link">Студія</a></li>
-          <li><a href="./portfolio.html" class="mobile-menu__link current">Портфоліо</a></li>
+          <li>
+            <a href="./portfolio.html" class="mobile-menu__link current">Портфоліо</a>
+          </li>
           <li><a href="#footer" class="mobile-menu__link">Контакти</a></li>
         </ul>
       </div>
       <div class="mob-menu-bottom">
         <ul class="menu-contacts list">
-          <li><a href="telto:+380961111111" class="menu-contacts__number">+38 096 111 11 11</a></li>
-          <li><a href="mailto:info@devstudio.com" class="menu-contacts__mail">info@devstudio.com</a></li>
+          <li>
+            <a href="telto:+380961111111" class="menu-contacts__number">+38 096 111 11 11</a>
+          </li>
+          <li>
+            <a href="mailto:info@devstudio.com" class="menu-contacts__mail">info@devstudio.com</a>
+          </li>
         </ul>
         <ul class="menu-soc list">
-          <li class="menu-soc__item"><a href="#" class="menu-soc__link">Instagram</a></li>
-          <li class="menu-soc__item"><a href="#" class="menu-soc__link">Twitter</a></li>
-          <li class="menu-soc__item"><a href="#" class="menu-soc__link">Facebook</a></li>
-          <li class="menu-soc__item"><a href="#" class="menu-soc__link">LinkedIn</a></li>
+          <li class="menu-soc__item">
+            <a href="#" class="menu-soc__link">Instagram</a>
+          </li>
+          <li class="menu-soc__item">
+            <a href="#" class="menu-soc__link">Twitter</a>
+          </li>
+          <li class="menu-soc__item">
+            <a href="#" class="menu-soc__link">Facebook</a>
+          </li>
+          <li class="menu-soc__item">
+            <a href="#" class="menu-soc__link">LinkedIn</a>
+          </li>
         </ul>
       </div>
     </div>
