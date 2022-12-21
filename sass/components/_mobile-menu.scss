@@ -73,7 +73,7 @@
   display: flex;
   flex-direction: column;
   font-size: 40px;
-  line-height: calc(47 / 40);
+  line-height: (47 / 40);
 
   &__link:hover,
   &__link:focus {
