@@ -72,7 +72,7 @@
 .mobile-menu {
   display: flex;
   flex-direction: column;
-  font-size: 40px;
+  font-size: 30px;
   line-height: (47 / 40);
 
   &__link:hover,
@@ -92,11 +92,11 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 64px;
-  gap: 32px;
+  gap: 16px;
 
   &__number {
     font-weight: 500;
-    font-size: 34px;
+    font-size: 24px;
     line-height: calc(40 / 34);
     letter-spacing: 0.02em;
     color: var(--accent-color);
@@ -113,7 +113,7 @@
 
 .menu-soc {
   display: flex;
-  //   justify-content: space-between;
+  justify-content: center;
   gap: 10px;
   flex-wrap: wrap;
 }

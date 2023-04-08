@@ -45,6 +45,10 @@ body {
   line-height: 1.7;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .list {
   display: flex;
   list-style: none;
@@ -261,7 +265,6 @@ img {
   height: 400px;
   background-color: rgba(47, 48, 58, 0.4);
   background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-mob-min.jpeg);
-  background-repeat: no-repeat;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -782,7 +785,7 @@ footer {
   padding-bottom: 94px;
 }
 .our-works__list {
-  justify-content: start;
+  justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 50px;
   gap: 15px 8px;
@@ -812,6 +815,11 @@ footer {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .our-works__button:hover, .our-works__button:focus {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.our-works__button.active {
   background-color: var(--accent-color);
   color: var(--white-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -918,6 +926,10 @@ footer {
   transform: translateY(0);
 }
 
+.not-visible {
+  display: none;
+}
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -944,6 +956,7 @@ footer {
   width: calc(100% - 30px);
   height: 609px;
   padding: 40px;
+  border-radius: 4px;
   background-color: var(--white-color);
   transform: translate(-50%, -50%) scaleY(1);
   transition: transform 200ms linear;
@@ -960,6 +973,7 @@ footer {
   border-radius: 50%;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
 }
 .modal__btn:hover .modal__btn-icon, .modal__btn:focus .modal__btn-icon {
   fill: var(--accent-color);
@@ -1213,7 +1227,7 @@ footer {
 .mobile-menu {
   display: flex;
   flex-direction: column;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 1.175;
 }
 .mobile-menu__link:hover, .mobile-menu__link:focus {
@@ -1231,11 +1245,11 @@ footer {
   display: flex;
   flex-direction: column;
   margin-bottom: 64px;
-  gap: 32px;
+  gap: 16px;
 }
 .menu-contacts__number {
   font-weight: 500;
-  font-size: 34px;
+  font-size: 24px;
   line-height: 1.1764705882;
   letter-spacing: 0.02em;
   color: var(--accent-color);
@@ -1250,6 +1264,7 @@ footer {
 
 .menu-soc {
   display: flex;
+  justify-content: center;
   gap: 10px;
   flex-wrap: wrap;
 }

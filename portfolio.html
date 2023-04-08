@@ -29,7 +29,7 @@
             <a href="./portfolio.html" class="navigation__link current">Портфоліо</a>
           </li>
           <li class="navigation__item">
-            <a href="./index.html" class="navigation__link">Контакти</a>
+            <a href="#footer" class="navigation__link">Контакти</a>
           </li>
         </ul>
       </nav>
@@ -58,26 +58,27 @@
     <div class="container">
       <section class="our-works">
         <h1 class="our-works__title visually-hidden">Наші роботи</h1>
+
         <ul class="our-works__list list">
           <li class="our-works__item">
-            <button type="button" class="our-works__button">Усі</button>
+            <button type="button" class="our-works__button active" value="Усі">Усі</button>
           </li>
           <li class="our-works__item">
-            <button type="button" class="our-works__button">Веб-сайти</button>
+            <button type="button" class="our-works__button" value="Веб-сайти">Веб-сайти</button>
           </li>
           <li class="our-works__item">
-            <button type="button" class="our-works__button">Додатки</button>
+            <button type="button" class="our-works__button" value="Додатки">Додатки</button>
           </li>
           <li class="our-works__item">
-            <button type="button" class="our-works__button">Дизайн</button>
+            <button type="button" class="our-works__button" value="Дизайн">Дизайн</button>
           </li>
           <li class="our-works__item">
-            <button type="button" class="our-works__button">Маркетинг</button>
+            <button type="button" class="our-works__button" value="Маркетинг">Маркетинг</button>
           </li>
         </ul>
         <ul class="project list">
-          <li class="project__item">
-            <a href="#" class="project__link">
+          <li class="project__item" data-id="Веб-сайт">
+            <a href="javascript:void(0)" class="project__link">
               <div class="project__container">
                 <picture>
                   <source srcset="
@@ -106,8 +107,8 @@
               </div>
             </a>
           </li>
-          <li class="project__item">
-            <a href="#" class="project__link">
+          <li class="project__item" data-id="Дизайн">
+            <a href="javascript:void(0)" class="project__link">
               <div class="project__container">
                 <picture>
                   <source srcset="
@@ -139,8 +140,8 @@
               </div>
             </a>
           </li>
-          <li class="project__item">
-            <a href="#" class="project__link">
+          <li class="project__item" data-id="Додаток">
+            <a href="javascript:void(0)" class="project__link">
               <div class="project__container">
                 <picture>
                   <source srcset="
@@ -171,8 +172,8 @@
               </div>
             </a>
           </li>
-          <li class="project__item">
-            <a href="#" class="project__link">
+          <li class="project__item" data-id="Маркетинг">
+            <a href="javascript:void(0)" class="project__link">
               <div class="project__container">
                 <picture>
                   <source srcset="
@@ -203,8 +204,8 @@
               </div>
             </a>
           </li>
-          <li class="project__item">
-            <a href="#" class="project__link">
+          <li class="project__item" data-id="Додаток">
+            <a href="javascript:void(0)" class="project__link">
               <div class="project__container">
                 <picture>
                   <source srcset="
@@ -235,8 +236,8 @@
               </div>
             </a>
           </li>
-          <li class="project__item">
-            <a href="#" class="project__link">
+          <li class="project__item" data-id="Веб-сайт">
+            <a href="javascript:void(0)" class="project__link">
               <div class="project__container">
                 <picture>
                   <source srcset="
@@ -267,8 +268,8 @@
               </div>
             </a>
           </li>
-          <li class="project__item">
-            <a href="#" class="project__link">
+          <li class="project__item" data-id="Дизайн">
+            <a href="javascript:void(0)" class="project__link">
               <div class="project__container">
                 <picture>
                   <source srcset="
@@ -299,8 +300,8 @@
               </div>
             </a>
           </li>
-          <li class="project__item">
-            <a href="#" class="project__link">
+          <li class="project__item" data-id="Маркетинг">
+            <a href="javascript:void(0)" class="project__link">
               <div class="project__container">
                 <picture>
                   <source srcset="
@@ -331,8 +332,8 @@
               </div>
             </a>
           </li>
-          <li class="project__item">
-            <a href="#" class="project__link">
+          <li class="project__item" data-id="Додаток">
+            <a href="javascript:void(0)" class="project__link">
               <div class="project__container">
                 <picture>
                   <source srcset="
@@ -441,7 +442,7 @@
           <li>
             <a href="./portfolio.html" class="mobile-menu__link current">Портфоліо</a>
           </li>
-          <li><a href="#footer" class="mobile-menu__link">Контакти</a></li>
+          <li><a href="#footer" class="mobile-menu__link" id="contactsLink">Контакти</a></li>
         </ul>
       </div>
       <div class="mob-menu-bottom">
@@ -475,7 +476,7 @@
     integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
     crossorigin="anonymous"></script>
   <script defer src="./js/mobile-menu.js"></script>
-  <script src="./js/modal.js"></script>
+  <script defer src="./js/portfolio.js"></script>
 </body>
 
 </html>
